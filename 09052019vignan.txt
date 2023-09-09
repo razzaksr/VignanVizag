@@ -1,0 +1,22 @@
+1. Print prime numbers in given N
+2. Check the given number is armstrong or not
+3. Average of two numbers less arithmetic overflow
+4. reverse the given number
+5. i) in file1.c contains char alpha,beta as global
+ii) in file2.c create constructor to get the values for alpha, beta and perform operation alpha++ - --beta
+
+in file2.c main get inputs for alpha beta again then do bitwise operation 
+alpha>>2 
+beta<<3
+
+in file2.c destructor get inputs alpha beta again then do shorthand operation,alpha*=4;beta%=3;
+
+
+
+6. Ask the informations from user like name(char array), service(char), status(char array), org(char array), package(int)
+
+and store it into string then print the string
+
+
+Employee information will be <name> working in <org> in <service> with <status> and salary is <package>
+

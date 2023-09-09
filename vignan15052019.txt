@@ -1,0 +1,75 @@
+1.The function drawPrintPattern(int n) is expected to print the first n line of the pattern
+shown below. (n >=0) & (n should be an odd number)
+Sample input 1:
+Enter the value of n: 5
+Sample output 1:
+**1**
+*111*
+11111
+Sample input 2:
+Enter the value of n: 3
+Sample output 2:
+*1*
+111
+2. The Function arrayReverse(int *arr,int len) accepts an array arr and length len(len >=0) as an argument.The function is expected to reverse the elements of the input array.
+For example, if the input array arr is {20,30,10,40,50} the function is expected to return{50,40,10,30,20}
+3. You must implement the function printPrime(int num,int digit) to accept the initial
+number num and number of digits n as inputs and prints all the prime numbers of n digits
+starting from the initial number num Use the PrimeBank structure and the associate
+function for this task.
+Sample input:
+Enter thr initial value:
+3
+Enter the value of n:
+4
+Sample Output:
+The prime numbers are 3,5,7,11
+4. the function getArraysum(int *arr, int len) is supposed to calculate and return the sum
+of element of the input array arr of the length len (len>=0).
+Sample input:
+Enter the length of array:
+5
+Enter the value of array:
+[25,10,5,3,7]
+Sample output:
+The sum of array is ‘50’
+5. The function multiplyMinNumber(int *a, int len) accepts a array of length len as input.
+It is supposed to return the multiplicative product of the minimum two values of input numbers without sorting.
+Sample input:
+Enter the length of array: 5
+Enter thr value of array:
+[5,9,11,7,10]
+Sample output:
+The product of maximum two input integer is “35”
+
+Question: Find Missing Number in Series
+A series of N numbers is given as the input. The program must print the missing number in the
+given series.
+Boundary Condition(s):
+3 <= N <= 100
+Input Format:
+The first line contains N.
+The second line contains N numbers separated by space(s).
+Output Format:
+The first line contains the missing number in the series.
+Example Input/Output 1:
+Input:
+4
+2 4 6 10
+Output:
+8
+Example Input/Output 2:
+Input:
+3
+5 15 20
+Output:
+10
+
+Question : Write a program to print Fibonacci series of given range.
+Question : Write a program to print Non-prime numbers for given Two range
+
+Question: Write a C program to count total number of even and odd elements in an array.
+
+Question: Sort an int type array values of 89 34 67 12 71 19 using 
+
+Question : Write a program to find out sum of digits of given number.

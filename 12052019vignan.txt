@@ -1,0 +1,47 @@
+5.5
+4.1
+6
+3.5
+4.4
+
+5.5
+4.1
+6.0
+3.5
+4.4
+
+
+
+
+
+3.5
+5.6
+2.5
+4.4
+3.3
+
+5.5
+5.6
+5.5
+4.4
+5.5
+
+
+
+Problem:1
+without using implicit funcction do string concat and reverse
+
+Problem:2
+using recursion do,
+a. fibonacci
+b. tower of hanoi
+
+problem:3
+print binary representaion of given int
+
+problem:4
+generate all rotation of given string
+
+
+
+

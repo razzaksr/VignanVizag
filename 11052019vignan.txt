@@ -1,0 +1,149 @@
+Array:
+To reduce time complexity
+Operations:
+Insertion
+Updation
+Search
+Traverse
+Sort
+.
+.
+
+syntax:
+type var[size];
+type var[size]={d1,d2,d3,.....};
+
+index 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Please tell us cuttoff 013
+
+Please tell us cuttoff 145
+
+Please tell us cuttoff 223
+
+Please tell us cuttoff 389
+
+Please tell us cuttoff 477
+
+Please tell us cuttoff 511
+
+Please tell us cuttoff 655
+
+Please tell us cuttoff 723
+
+Please tell us cuttoff 820
+
+Please tell us cuttoff 910
+
+10
+20
+23
+55
+11
+77
+89
+23
+45
+13
+
+
+
+
+Say ur expectation: 6.5
+
+9.300000 also u would get at 1
+8.800000 also u would get at 2
+12.500000 also u would get at 3
+7.500000 also u would get at 8
+
+
+
+
+
+Say ur expectation: 9.1
+
+9.300000 also u would get at 2
+12.500000 also u would get at 4
+
+
+
+219.3
+209.9
+300.9
+300.9
+99.1
+249.9
+299.9
+
+
+
+
+Sorting:
+
+Merge
+quick
+heap
+O(logn)
+
+
+selection
+insertion
+bubble
+O(n2)
+
+
+65
+52
+50
+45
+30
+
+case study:1
+Data:
+Create int type array to hold 10 members experience
+
+Operations:
+1. Get the 10 inputs as experience in array(insertion)
+2. depends on range of following, offer onsite or promotion or apprisal(traverse and search)
+
+eg: 4>exp>=2 apprisal, 6>exp>=4 onsite, exp>=6 promotion
+
+
+case study:2
+Data:
+Create int type array which holds following mobile price as values
+6999 7122 5999 13999 7999
+Operations using functions:
+1. Sort the prices using selection
+2. Display by traverse
+
+
+
+
+problem:1
+2*2 matrix multiplication and transpose
+
+problem:2
+Enter the limit N from user within N try to count even numbers
+Note: even number are nothing but,
+convert your digit into binary and sum how many 1's you can find if sum of 1's is even then only its even
+so within limit count how many even numbers
+
+
+
+
+

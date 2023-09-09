@@ -1,0 +1,29 @@
+#include<stdio.h>
+void main()
+{
+	int n, alpha[n], beta[n], cosmo[n], index,com;
+	scanf("%d",&n);
+	for(index=0;index<n;index++)
+	{
+		scanf("%d",&alpha[index]);
+	}
+	for(index=0;index<n;index++)
+	{
+		scanf("%d",&beta[index]);
+		cosmo[index]=(alpha[index]*100)+beta[index];
+	}
+	for(com=0;com<n-1;com++)
+	{
+		for(index=0;index<n-com-1;index++)
+		{
+			if(cosmo[index]>cosmo[index+1])
+			{
+				cosmo[index]^=cosmo[index+1];
+				cosmo[index+1]^=cosmo[index];
+				cosmo[index]^=cosmo[index+1];
+			}
+		}
+	}
+	for(index=0;index<n;index++)
+	{printf("\n%d",cosmo[index]);}
+}

@@ -1,0 +1,107 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct each
+{
+	int a;struct each *lt,*rt;
+};
+struct each *root=NULL;
+void insert(int d)
+{
+	struct each *current,*parent,*mine;
+	mine=(struct each*)malloc(sizeof(struct each));
+	mine->a=d;mine->lt=NULL;mine->rt=NULL;
+	if(root==NULL){root=mine;}
+	else
+	{
+		current=root;
+		parent=NULL;
+		while(1)
+		{
+			parent=current;
+			if(d>parent->a)
+			{
+				current=current->rt;
+				if(current==NULL)
+				{
+					parent->rt=mine;
+					return;
+				}
+			}
+			else
+			{
+				current=current->lt;
+				if(current==NULL)
+				{
+					parent->lt=mine;
+					return;
+				}
+			}
+		}
+	}
+}
+struct each* search(int d)
+{
+	struct each *current=root;
+	while(current->a!=d)
+	{
+		if(current!=NULL)
+		{printf("%d ",current->a);}
+		if(current->a>d)
+		{current=current->lt;}
+		else{current=current->rt;}
+		if(current==NULL){return NULL;}
+	}
+	return current;
+}
+void preOrder(struct each *what)
+{
+	if(what!=NULL)
+	{
+		printf("%d ",what->a);
+		preOrder(what->lt);
+		preOrder(what->rt);
+	}
+}
+void inOrder(struct each *what)
+{
+	if(what!=NULL)
+	{
+		inOrder(what->lt);
+		printf("%d ",what->a);
+		inOrder(what->rt);
+	}
+}
+void postOrder(struct each *what)
+{
+	if(what!=NULL)
+	{
+		postOrder(what->lt);
+		postOrder(what->rt);
+		printf("%d ",what->a);
+	}
+}
+int findMaxHeight(struct each *cave)
+{
+	//struct each *cave;cave=add;
+	if(cave==NULL){return 0;}
+	else
+	{
+		int lDepth=findMaxHeight(cave->lt);
+		int rDepth=findMaxHeight(cave->rt);
+		if(lDepth>rDepth){return lDepth+1;}
+		else{return rDepth+1;}
+	}
+}
+void main()
+{
+	struct each *just;int index;
+	int max[10]={12,67,2,4,59,1,4,78,14,7};
+	for(index=0;index<10;index++)
+	{insert(max[index]);}
+	just=search(14);
+	printf("\n%d",just->a);
+	printf("\nPreOrder: ");preOrder(root);
+	printf("\nInOrder: ");inOrder(root);
+	printf("\nPostOrder: ");postOrder(root);
+	printf("\nMaximum depth is:%d",findMaxHeight(root));
+}

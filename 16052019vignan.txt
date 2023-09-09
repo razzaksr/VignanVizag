@@ -1,0 +1,166 @@
+Algorithm:
+rules:
+1. finite steps
+2. should not duplicated
+3. input&output
+4. step no is optional
+5. No technology/ language specific
+
+Upper bound
+Lower bound
+
+Example:1
+Salary Calculation:
+Step: 1 START
+Step: 2 Declare BASIC, HIKE, CTC
+Step: 3 Get the values from user for BASIC, HIKE
+Step: 4 CTC<-- BASIC+(BASIC*HIKE)/100
+Step: 5 Display CTC
+Step: 6 STOP
+Example:2
+Swap two numbers without temporary:
+Example:3
+Search element in array:
+1.START
+2. Declare Array ALPHA with 78 12 34 89 55 and INDEX is 0
+3. WHILE repeat INDEX < 5
+IF ALPHA [ INDEX ] <=60
+Display ALPHA[INDEX]
+END IF
+INDEX<-INDEX + 1
+END WHILE
+4. STOP
+Example:4
+Print discount to given product price
+Example:5
+Algorithm for Right Upper floyd pattern
+1. START
+2. Declare ROW=4, COL, DATA='A'
+3. WHILE repeat ROW > 0
+	Initalise COL=1
+	WHILE repeat COL<=4
+	        IF COL>=ROW
+	        display DATA with tabspace
+	        DATA=DATA+1
+	        END IF
+	        ELSE
+	       display tabspace
+	       END ELSE
+	       COL=COL+1
+	END WHILE
+	display newline
+	ROW=ROW-1
+	END WHILE
+4. STOP
+
+
+1. START
+2. Declare and Initailise ROW=1, COL, DATA='a'
+3. WHILE repeat ROW<=4
+	COL=1
+	WHILE repeat COL<=4
+		IF ROW%2==0
+			display DATA
+			DATA=DATA+2
+		END IF
+		Otherwise
+			display DATA
+			DATA=DATA+1
+		END otherwise
+		COL=COL+1
+	END WHILE
+	ROW=ROW+1
+   END WHILE
+4. STOP
+
+Analysis of algorithm:
+
+Space
+Time
+
+Big Oh: O: Worst case
+upper bound of algorithm
+
+Omega : Best case
+lower bound
+
+Thetea: Average case
+upper and lower
+
+
+
+
+
+
+
+
+
+
+
+
+
+Functions:
+returntype nameofFunction(parameters)
+{
+
+}
+
+param:
+data types, array, pointer, struct, union, enum
+return types:
+data types, pointer, 
+
+Recursion:
+Function calling itself
+
+why?
+
+3
+6
+9
+12
+15
+18
+21
+24
+27
+30
+33
+36
+39
+42
+45
+48
+
+Problem:
+price: 7999, 6500, 19000, 16700, 23800, 9999, 14500
+Write recursion function to update values in array with following 
+condition,
+5000 to 10000 -------- 5%
+10000 to 15000 ------  8%
+more than 15000 -----  7%
+
+5 Percent discount
+7600 price updated
+5 Percent discount
+6175 price updated
+7 Percent discount
+17670 price updated
+7 Percent discount
+15531 price updated
+7 Percent discount
+22134 price updated
+5 Percent discount
+9500 price updated
+8 Percent discount
+13340 price updated
+
+Printing elements from an array using recursion
+1. START	
+2. Declare and Initailse array DATA = 12, 78, 98, 56, 87 also index=0
+3. display DATA[index]
+    END ELSE
+    index=index+1
+4. Repeat Step 3 Until index>=5
+5. STOP
+

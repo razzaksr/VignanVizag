@@ -1,0 +1,81 @@
+1. Find duplicates in array and if there is more than one form of duplicates product the two sets.
+Sample input:
+Enter the length of array:
+8
+Enter the value of array:
+[2,3,2,2,5,6,6,7]
+Sample output:
+[2,3,5,6,7]
+Duplicate product is : 12
+
+#include<stdio.h>
+void find(int *data,int size)
+{
+	int dup1=0,dup2=0,an,ban;
+	for(an=0;an<size;an++)
+	{
+		for(ban=an+1;ban<size;ban++)
+		{
+			//if(c==2){break;}
+			if(data[an]==data[ban])
+			{
+			if(dup1==0){dup1=data[an];}
+			else if(data[an]==dup1)
+			{
+			dup1=data[an];
+			}
+			if(dup2==0&&data[an]!=dup1)			{dup2=data[an];}
+			else if(data[an]==dup2&&data[an]!=dup1)
+{dup2=data[an];}
+			}
+		}
+	}
+	printf("\n%d\t%d",dup1,dup2);
+	printf("\n%d",(dup1*dup2));
+}
+void main()
+{
+	int size,dup1,dup2,an,ban;
+	int data[size];
+	dup1=0;dup2=0;printf("\nArr length");
+	scanf("%d",&size);printf("\nArr elems");
+	for(an=0;an<size;an++)
+	{scanf("%d",&data[an]);}
+	find(data,size);
+}
+
+2. Consider you may have 3 int array where two array's values gonna be given from user and third array will contains all elements from both in first half selection(ascending) and second half insertion sort(descending)
+Sample Input:
+len of arr1:
+4
+Arr1 elements:
+89 12 67 34
+len of arr2:
+4
+Arr2 elements:
+45 7 14 8
+Sample output:
+Array 3 elements are:
+12 34 67 89 45 14 8 7
+
+3. Do the swap operation in int array with length N if you find two least elements which those should be unique
+Sample Input:
+Length of array:
+6
+Array elements:
+4 2 6 7 2 5
+Sample Output:
+5 2 6 7 2 4
+Note:
+Least elements is 2 and 4 but 2 is duplicated so perform swap between 5 and 4
+
+4. Consider array of int with length of N, find the duplicates and check whether its divisable by NUM that user gonna give
+Sample Input:
+length of array: 
+6
+Array elements:
+20 45 60 45 90 100
+Enter the NUM:
+5
+Sample Output:
+45
